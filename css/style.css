@@ -1,0 +1,296 @@
+/* Reset dasar */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Menu */
+nav {
+  background-color: #a6e3e9;
+  color: aliceblue;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.menu {
+  width: 50%;
+}
+
+.menu > ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Hero / Jumbotron */
+header {
+  background: url("../foto/baground\ \(2\).jpeg");
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  letter-spacing: 5px;
+  text-shadow: 0 0 4px #000;
+}
+
+.header-opacity {
+  background-color: #b5fad3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-jumbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-jumbotron > h4 {
+  color: rgb(246, 94, 39);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header-jumbotron > h5 {
+  color: rgb(28, 21, 218);
+  margin: 0;
+  padding: 5px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-shadow: none;
+}
+
+.button {
+  background-color: yellow;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tentang Saya */
+#tentang-saya {
+  background-color: #fff176;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#tentang-saya h4 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#tentang-saya .content {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#tentang-saya .foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#tentang-saya .foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#tentang-saya .desc {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Portofolio */
+#portofolio {
+  background-color: #e0f7fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#portofolio h4 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#portofolio h5 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Riwayat Pendidikan */
+.pendidikan ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Project */
+.project-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-item h6 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.project-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Tombol Lihat Project */
+.project-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #ffeb3b;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-button:hover {
+  background-color: #fdd835;
+  transform: translateY(-3px);
+}
+
+/* Contact */
+#contact {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffeb3b;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #fdd835;
+}
+
+#contact a {
+  color: #000;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
